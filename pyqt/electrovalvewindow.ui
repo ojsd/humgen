@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ElectrovalveWindow</class>
+ <widget class="QDialog" name="ElectrovalveWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>182</width>
+    <height>213</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Electrovalves</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>161</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox_electrovalve1">
+      <property name="title">
+       <string>Electrovalve 1 VERT</string>
+      </property>
+      <widget class="QRadioButton" name="ev1_radioButton_open">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Open</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="ev1_radioButton_closed">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Closed</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_electrovalve2">
+      <property name="title">
+       <string>Electrovalve 2 JAUNE</string>
+      </property>
+      <widget class="QRadioButton" name="ev2_radioButton_open">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Open</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="ev2_radioButton_closed">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Closed</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="action_pump">
+   <property name="text">
+    <string>Syringe pump</string>
+   </property>
+  </action>
+  <action name="action_flows">
+   <property name="text">
+    <string>Flow controllers</string>
+   </property>
+  </action>
+  <action name="action_pressure">
+   <property name="text">
+    <string>Pressure controller</string>
+   </property>
+  </action>
+  <action name="action_valve2x3">
+   <property name="text">
+    <string>Double 3-ways valve</string>
+   </property>
+  </action>
+  <action name="action_electrovalves">
+   <property name="text">
+    <string>Electro-valves</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

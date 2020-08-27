@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file '../pyqt/maintenancetoolswindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.10
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MaintenanceToolsWindow(object):
+    def setupUi(self, MaintenanceToolsWindow):
+        MaintenanceToolsWindow.setObjectName("MaintenanceToolsWindow")
+        MaintenanceToolsWindow.resize(318, 419)
+        self.groupBox_syringe_dimensions = QtWidgets.QGroupBox(MaintenanceToolsWindow)
+        self.groupBox_syringe_dimensions.setGeometry(QtCore.QRect(20, 20, 281, 121))
+        self.groupBox_syringe_dimensions.setObjectName("groupBox_syringe_dimensions")
+        self.gridLayoutWidget = QtWidgets.QWidget(self.groupBox_syringe_dimensions)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(10, 30, 261, 80))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout_syringe = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout_syringe.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_syringe.setObjectName("gridLayout_syringe")
+        self.label_syringe_volume = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_syringe_volume.setObjectName("label_syringe_volume")
+        self.gridLayout_syringe.addWidget(self.label_syringe_volume, 0, 0, 1, 1)
+        self.lineEdit_syringe_volume = QtWidgets.QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_syringe_volume.setReadOnly(False)
+        self.lineEdit_syringe_volume.setObjectName("lineEdit_syringe_volume")
+        self.gridLayout_syringe.addWidget(self.lineEdit_syringe_volume, 0, 1, 1, 1)
+        self.lineEdit_syringe_diameter = QtWidgets.QLineEdit(self.gridLayoutWidget)
+        self.lineEdit_syringe_diameter.setReadOnly(False)
+        self.lineEdit_syringe_diameter.setObjectName("lineEdit_syringe_diameter")
+        self.gridLayout_syringe.addWidget(self.lineEdit_syringe_diameter, 1, 1, 1, 1)
+        self.label_syringe_diameter = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_syringe_diameter.setObjectName("label_syringe_diameter")
+        self.gridLayout_syringe.addWidget(self.label_syringe_diameter, 1, 0, 1, 1)
+        self.groupBox_syringe_calibration = QtWidgets.QGroupBox(MaintenanceToolsWindow)
+        self.groupBox_syringe_calibration.setGeometry(QtCore.QRect(20, 150, 281, 121))
+        self.groupBox_syringe_calibration.setObjectName("groupBox_syringe_calibration")
+        self.button_calibrate = QtWidgets.QToolButton(self.groupBox_syringe_calibration)
+        self.button_calibrate.setGeometry(QtCore.QRect(10, 30, 261, 30))
+        self.button_calibrate.setObjectName("button_calibrate")
+        self.horizontalLayoutWidget = QtWidgets.QWidget(self.groupBox_syringe_calibration)
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(14, 70, 251, 41))
+        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label_max_pumping_volume = QtWidgets.QLabel(self.horizontalLayoutWidget)
+        self.label_max_pumping_volume.setObjectName("label_max_pumping_volume")
+        self.horizontalLayout.addWidget(self.label_max_pumping_volume)
+        self.lineEdit_max_pumping_volume = QtWidgets.QLineEdit(self.horizontalLayoutWidget)
+        self.lineEdit_max_pumping_volume.setReadOnly(True)
+        self.lineEdit_max_pumping_volume.setObjectName("lineEdit_max_pumping_volume")
+        self.horizontalLayout.addWidget(self.lineEdit_max_pumping_volume)
+        self.groupBox_syringe_purge = QtWidgets.QGroupBox(MaintenanceToolsWindow)
+        self.groupBox_syringe_purge.setGeometry(QtCore.QRect(20, 280, 281, 121))
+        self.groupBox_syringe_purge.setObjectName("groupBox_syringe_purge")
+        self.horizontalLayoutWidget_2 = QtWidgets.QWidget(self.groupBox_syringe_purge)
+        self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(19, 30, 251, 41))
+        self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label_purge_cycles = QtWidgets.QLabel(self.horizontalLayoutWidget_2)
+        self.label_purge_cycles.setObjectName("label_purge_cycles")
+        self.horizontalLayout_2.addWidget(self.label_purge_cycles)
+        self.lineEdit_purge_cycles = QtWidgets.QLineEdit(self.horizontalLayoutWidget_2)
+        self.lineEdit_purge_cycles.setObjectName("lineEdit_purge_cycles")
+        self.horizontalLayout_2.addWidget(self.lineEdit_purge_cycles)
+        self.button_purge = QtWidgets.QToolButton(self.groupBox_syringe_purge)
+        self.button_purge.setGeometry(QtCore.QRect(10, 80, 261, 31))
+        self.button_purge.setObjectName("button_purge")
+
+        self.retranslateUi(MaintenanceToolsWindow)
+        QtCore.QMetaObject.connectSlotsByName(MaintenanceToolsWindow)
+
+    def retranslateUi(self, MaintenanceToolsWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MaintenanceToolsWindow.setWindowTitle(_translate("MaintenanceToolsWindow", "Maintenance tools"))
+        self.groupBox_syringe_dimensions.setTitle(_translate("MaintenanceToolsWindow", "Syringe dimensions"))
+        self.label_syringe_volume.setText(_translate("MaintenanceToolsWindow", "Syringe volume (µL):"))
+        self.label_syringe_diameter.setText(_translate("MaintenanceToolsWindow", "Syringe diameter (mm):"))
+        self.groupBox_syringe_calibration.setTitle(_translate("MaintenanceToolsWindow", "Syringe calibration"))
+        self.button_calibrate.setText(_translate("MaintenanceToolsWindow", "Calibrate"))
+        self.label_max_pumping_volume.setText(_translate("MaintenanceToolsWindow", "Max. pumping vol. (µL):"))
+        self.groupBox_syringe_purge.setTitle(_translate("MaintenanceToolsWindow", "Syringe purge"))
+        self.label_purge_cycles.setText(_translate("MaintenanceToolsWindow", "Number of cycles:"))
+        self.button_purge.setText(_translate("MaintenanceToolsWindow", "Purge"))
+

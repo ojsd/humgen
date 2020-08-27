@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StateWindow</class>
+ <widget class="QDialog" name="StateWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>405</width>
+    <height>187</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>State</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>353</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_isocalib_rate">
+      <property name="text">
+       <string>Isocalib rate (µL/min): </string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEdit_primary_flow">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Value of the air flow used in the primary air path.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_secondary_flow">
+      <property name="text">
+       <string>Secondary flow (mln/min): </string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_primary_flow">
+      <property name="text">
+       <string>Primary flow (mln/min): </string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_boost_factor">
+      <property name="text">
+       <string>Isocalib rate boost factor: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="lineEdit_secondary_flow">
+      <property name="toolTip">
+       <string>Value of the air flow used in the secondary air path.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEdit_boost_factor">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Multiplicative factor applied to Isocalib rate.&lt;/p&gt;&lt;p&gt;During state &amp;quot;Init calib: Step 2&amp;quot;, syringe pump infusion rate will be multiplied by this number.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit_isocalib_rate">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Syringe pump infusion rate used when in state &amp;quot;IsoCalib: Std A&amp;quot; or &amp;quot;IsoCalib: Std B&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="action_pump">
+   <property name="text">
+    <string>Syringe pump</string>
+   </property>
+  </action>
+  <action name="action_flows">
+   <property name="text">
+    <string>Flow controllers</string>
+   </property>
+  </action>
+  <action name="action_pressure">
+   <property name="text">
+    <string>Pressure controller</string>
+   </property>
+  </action>
+  <action name="action_valve2x3">
+   <property name="text">
+    <string>Double 3-ways valve</string>
+   </property>
+  </action>
+  <action name="action_electrovalves">
+   <property name="text">
+    <string>Electro-valves</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

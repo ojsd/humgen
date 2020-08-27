@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ElPressWindow</class>
+ <widget class="QDialog" name="ElPressWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>197</width>
+    <height>127</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pressure</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_pressure">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>191</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="title">
+    <string>Pressure Controller</string>
+   </property>
+   <widget class="QLineEdit" name="lineEdit_pressure">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>91</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>28</height>
+     </size>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_setpoint">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Setpoint:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pressure">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pressure:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_setpoint">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>30</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <action name="action_pump">
+   <property name="text">
+    <string>Syringe pump</string>
+   </property>
+  </action>
+  <action name="action_flows">
+   <property name="text">
+    <string>Flow controllers</string>
+   </property>
+  </action>
+  <action name="action_pressure">
+   <property name="text">
+    <string>Pressure controller</string>
+   </property>
+  </action>
+  <action name="action_valve2x3">
+   <property name="text">
+    <string>Double 3-ways valve</string>
+   </property>
+  </action>
+  <action name="action_electrovalves">
+   <property name="text">
+    <string>Electro-valves</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
